@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gris</title>
+    <style>
+        body {
+            background: url('es.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: justify;
+        }
+        h1 {
+            text-align: center;
+        }
+        .section {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        .section img {
+            display: block;
+            margin: 0 auto;
+            width: 150px; /* Ajusta el tamaño de la imagen según sea necesario */
+            height: auto;
+            transition: transform 0.3s; /* Añadido para la animación suave */
+        }
+        .section img:hover {
+            transform: scale(1.5); /* Incrementar el tamaño 0.5 veces más grande */
+        }
+        .collage-table {
+            width: calc(100% - 40px); /* El ancho de la tabla es igual al justificado con un margen de 20px a cada lado */
+            margin: 20px auto 0; /* Margen superior de 20px y centrado horizontal */
+            border-collapse: collapse; /* Colapso de bordes para evitar espacios entre celdas */
+        }
+        .collage-table td {
+            padding: 0; /* Sin espacios internos en las celdas */
+            text-align: center;
+            vertical-align: middle;
+            border: 2px solid white; /* Borde blanco alrededor de cada imagen */
+        }
+        .collage-table img {
+            max-width: 100%; /* Ajusta el tamaño máximo de las imágenes dentro de las celdas */
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estudios y preparación para ser astronauta</h1>
+    <div class="content">
+        <div class="section">
+            <p>Empezaremos explicando que el procedimiento para acceder a estos estudios es muy complejo y difícil, debido a los múltiples requisitos que debes cumplir, y por las escasas posiciones que hay abiertas. Pero si alcanzas el privilegio de ser uno de los elegidos, y además cuentas con una formación correcta, lograrás sin duda tu sueño de llegar a ser astronauta y conquistar el cosmos.</p>
+            <img src="blog.png" alt="Imagen 1">
+        </div>
+        <div class="section">
+            <p>Educación Universitaria.</p>
+            <img src="dee.jpg" alt="Imagen 2">
+        </div>
+        <div class="section">
+            <p>Especializaciones de educación específicas para la carrera de astronauta.</p>
+            <img src="deee.jpg" alt="Imagen 3">
+        </div>
+        <div class="section">
+            <p>Mantenerse en buena forma física y excelente salud.</p>
+            <img src="bel.jpg" alt="Imagen 4">
+        </div>
+        <div class="section">
+            <p>Experiencia en una carrera profesional relacionada.</p>
+            <img src="exp.png" alt="Imagen 5">
+        </div>
+        <div class="section">
+            <p>Habilidades de relaciones interpersonales.</p>
+            <img src="intra.jpg" alt="Imagen 6">
+        </div>
+        <div class="section">
+            <p>Ser fluente en idioma inglés e idioma ruso, oral y escrito.</p>
+            <img src="idio.jpg" alt="Imagen 7">
+        </div>
+    </div>
+
+    <!-- Tabla tipo collage al final -->
+    <table class="collage-table">
+        <tr>
+            <td><img src="blog.png" alt="Imagen 1"></td>
+            <td><img src="dee.jpg" alt="Imagen 2"></td>
+            <td><img src="deee.jpg" alt="Imagen 3"></td>
+            <td><img src="bel.jpg" alt="Imagen 4"></td>
+        </tr>
+        <tr>
+            <td><img src="exp.png" alt="Imagen 5"></td>
+            <td><img src="intra.jpg" alt="Imagen 6"></td>
+            <td colspan="2"><img src="idio.jpg" alt="Imagen 7"></td>
+        </tr>
+    </table>
+</body>
+</html>
+
